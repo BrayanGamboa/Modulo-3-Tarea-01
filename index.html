@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/342/342344.png" type="image/x-icon">
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <header>
+            <h1>Calculadora de Propinas:</h1>
+        </header>
+        <div class="contenedor">
+            <p>Total de cuenta:</p>
+            <input type="number" id="vlr_cuenta">
+            <p>Porcentaje de Propinas:</p>
+            <input type="number" ran id="vlr_propina" min="0" max="100"><br><br>
+            <input type="button" value="Calcular" id="btn_calcular" onclick="calcular()">
+        </div>
+        <footer>
+            <br>
+            <h2>Resumen:</h2>
+            <p>Total de Cuenta:</p>
+            <input type="number" id="vlr_cuenta_resumen" disabled>
+            <p>Propina:</p>
+            <input type="number" id="vlr_propina_resumen" disabled>
+            <p>Total a Pagar:</p>
+            <input type="number" id="vlr_total" disabled>
+        </footer>
+    </div>
+</body>
+
+</html>
